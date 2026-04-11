@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Previsão do Tempo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+ 
+  <div class="app">
+ 
+    <!-- Cabeçalho com busca -->
+    <header class="header">
+      <h1 class="logo">clima<span>.</span></h1>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="inputCidade"
+          placeholder="Digite uma cidade..."
+          autocomplete="off"
+        />
+        <button id="btnBuscar">Buscar</button>
+      </div>
+    </header>
+ 
+    <!-- Mensagem de erro (fica escondida por padrão) -->
+    <div class="erro" id="erro">
+      Cidade não encontrada. Tente novamente.
+    </div>
+ 
+    <!-- Seção principal com o clima atual -->
+    <main class="conteudo" id="conteudo">
+ 
+      <section class="card-principal">
+        <div class="cidade-info">
+          <h2 id="nomeCidade">--</h2>
+          <p id="dataHoje" class="data">--</p>
+        </div>
+        <div class="temp-principal">
+          <span id="iconeClima" class="icone-grande">--</span>
+          <div>
+            <p id="temperatura" class="graus">--</p>
+            <p id="descricao" class="descricao">--</p>
+          </div>
+        </div>
+        <div class="detalhes">
+          <div class="detalhe">
+            <span class="detalhe-label">Sensação</span>
+            <span class="detalhe-valor" id="sensacao">--</span>
+          </div>
+          <div class="detalhe">
+            <span class="detalhe-label">Umidade</span>
+            <span class="detalhe-valor" id="umidade">--</span>
+          </div>
+          <div class="detalhe">
+            <span class="detalhe-label">Vento</span>
+            <span class="detalhe-valor" id="vento">--</span>
+          </div>
+          <div class="detalhe">
+            <span class="detalhe-label">Visibilidade</span>
+            <span class="detalhe-valor" id="visibilidade">--</span>
+          </div>
+        </div>
+      </section>
+ 
+      <!-- Previsão para 5 dias -->
+      <section class="card-previsao">
+        <h3 class="secao-titulo">Próximos 5 dias</h3>
+        <div class="previsao-lista" id="previsaoLista">
+          <!-- Preenchido pelo JavaScript -->
+        </div>
+      </section>
+ 
+    </main>
+ 
+    <!-- Tela inicial (antes de buscar) -->
+    <div class="tela-inicial" id="telaInicial">
+      <p class="hint">Digite uma cidade para começar</p>
+    </div>
+ 
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
