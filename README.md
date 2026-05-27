@@ -20,15 +20,12 @@ Aplicação web que exibe o clima atual e a previsão para os próximos 5 dias d
 - Previsão para os próximos 5 dias
 - Layout responsivo
 
-## 📈 Evolução planejada do projeto
-
-Este projeto está sendo desenvolvido conforme avanço no curso Full Stack Web. Cada nova tecnologia aprendida será aplicada aqui:
-
-- **React** — refatoração em componentes, animações e melhor organização do código
-- **Node.js** — criação de backend próprio e proteção da chave da API
-- **Banco de dados** — salvar cidades favoritas e histórico de buscas
-- **TypeScript** — tipagem do código para maior robustez
+## 📈 Próximos passos
+- Proteger a chave da API via variável de ambiente
+- Refatorar para componentes com React
+- Adicionar busca por geolocalização
 
 ## 👨‍💻 Sobre o desenvolvedor
-
-Desenvolvedor em transição de carreira, atualmente cursando Full Stack Web com JavaScript, TypeScript, Node.js e React.
+Profissional em transição de carreira do setor bancário para tecnologia.
+Atualmente focado no ecossistema Salesforce — Sales Cloud, Service Cloud,
+Flow Builder e OmniStudio — com base em desenvolvimento web (HTML, CSS e JavaScript).
